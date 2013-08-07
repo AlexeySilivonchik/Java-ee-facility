@@ -18,7 +18,7 @@ Java-ee-facility
 
 # Скрипт базы данных
 
-DROP DATABASE IF EXISTS `production`;
+- DROP DATABASE IF EXISTS `production`;
 DROP DATABASE IF EXISTS `distributor`;
 DROP DATABASE IF EXISTS `warehouse`;
 DROP TABLE IF EXISTS `user`;
