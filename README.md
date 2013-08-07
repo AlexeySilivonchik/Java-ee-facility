@@ -12,6 +12,6 @@ Java-ee-facility
  
 # Используемые технологии
  
- -Приложение написано в среде NetBeans IDE 7.3
- -Сервер -  Apache Tomcat 7.0.34.0
- -База данных - MySql
+ - Приложение написано в среде NetBeans IDE 7.3
+ - Сервер -  Apache Tomcat 7.0.34.0
+ - База данных - MySql
