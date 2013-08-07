@@ -26,7 +26,7 @@ DROP DATABASE IF EXISTS `warehouse`;
 
 DROP TABLE IF EXISTS `user`;
 
--CREATE TABLE IF NOT EXISTS `warehouse` (
+- CREATE TABLE IF NOT EXISTS `warehouse` (
 
   `warehouse_id` int NOT NULL AUTO_INCREMENT,
   
@@ -41,16 +41,16 @@ DROP TABLE IF EXISTS `user`;
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
--INSERT INTO `warehouse` (`warehouse_id`, `name`, `category`,`area`) VALUES
+- INSERT INTO `warehouse` (`warehouse_id`, `name`, `category`,`area`) VALUES
 
-  (1,'Склад01','A','100000'),
+	      (1,'Склад01','A','100000'),
   
-  (2,'Склад02','B','50000'),
+	      (2,'Склад02','B','50000'),
   
-  (3,'Склад03','C','75000');
+	      (3,'Склад03','C','75000');
 
 
--CREATE TABLE IF NOT EXISTS `distributor` (
+- CREATE TABLE IF NOT EXISTS `distributor` (
 
   `distributor_id` int NOT NULL AUTO_INCREMENT,
   
@@ -63,16 +63,16 @@ DROP TABLE IF EXISTS `user`;
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
--INSERT INTO `distributor` (`distributor_id`, `name`, `address`) VALUES
+- INSERT INTO `distributor` (`distributor_id`, `name`, `address`) VALUES
 
-	(1,'ВивиконАБС','ул. Кольцова 13-56'),
+	      (1,'ВивиконАБС','ул. Кольцова 13-56'),
+	  
+   	      (2,'Дистриб','ул. Калинина 22-110'),
 	
-	(2,'Дистриб','ул. Калинина 22-110'),
-	
-	(3,'БигДьюти','ул. Машерова 30-8');
+	      (3,'БигДьюти','ул. Машерова 30-8');
 
 
--CREATE TABLE IF NOT EXISTS `production` (
+- CREATE TABLE IF NOT EXISTS `production` (
 
   `production_id` int NOT NULL AUTO_INCREMENT,
   
@@ -103,16 +103,16 @@ DROP TABLE IF EXISTS `user`;
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
--INSERT INTO `production` (`production_id`,`name`,`retail_price`,`batch_size`,`batch_price`,`amount`,`warehouse_id`,`distributor_id`) VALUES
+- INSERT INTO `production` (`production_id`,`name`,`retail_price`,`batch_size`,`batch_price`,`amount`,`warehouse_id`,`distributor_id`) VALUES
 
-	(1,'Консервы','2000','1000','1500000','16000','1','3'),
+	      (1,'Консервы','2000','1000','1500000','16000','1','3'),
 	
-	(2,'Сковороды','5000','500','2000000','35000','2','2'),
+	      (2,'Сковороды','5000','500','2000000','35000','2','2'),
 	
-	(3,'Пакеты','500','7000','2700000','4000','3','1');
+	      (3,'Пакеты','500','7000','2700000','4000','3','1');
 
 
--CREATE TABLE IF NOT EXISTS `user` (
+- CREATE TABLE IF NOT EXISTS `user` (
 
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   
@@ -125,10 +125,10 @@ DROP TABLE IF EXISTS `user`;
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
--INSERT INTO `user` (`user_id`, `login`, `password`) VALUES
+- INSERT INTO `user` (`user_id`, `login`, `password`) VALUES
 
-	(1,'Александр','123'),
+	      (1,'Александр','123'),
 	
-	(2,'Виталий','abc'),
+	      (2,'Виталий','abc'),
 	
-	(3,'Григорий','yyy');
+	      (3,'Григорий','yyy');
