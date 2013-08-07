@@ -18,23 +18,35 @@ Java-ee-facility
 
 # Скрипт базы данных
 
-- DROP DATABASE IF EXISTS `production`;
+DROP DATABASE IF EXISTS `production`;
+
 DROP DATABASE IF EXISTS `distributor`;
+
 DROP DATABASE IF EXISTS `warehouse`;
+
 DROP TABLE IF EXISTS `user`;
 
 CREATE TABLE IF NOT EXISTS `warehouse` (
+
   `warehouse_id` int NOT NULL AUTO_INCREMENT,
+  
   `name` char(35) NOT NULL,
+  
   `category` char(5) NOT NULL,
+  
   `area` int NOT NULL,
+  
   PRIMARY KEY (`warehouse_id`)
+  
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `warehouse` (`warehouse_id`, `name`, `category`,`area`) VALUES
+
   (1,'Склад01','A','100000'),
-	(2,'Склад02','B','50000'),
-	(3,'Склад03','C','75000');
+  
+  (2,'Склад02','B','50000'),
+  
+  (3,'Склад03','C','75000');
 
 CREATE TABLE IF NOT EXISTS `distributor` (
   `distributor_id` int NOT NULL AUTO_INCREMENT,
