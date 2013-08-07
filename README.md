@@ -25,8 +25,7 @@ DROP DATABASE IF EXISTS `distributor`;
 DROP DATABASE IF EXISTS `warehouse`;
 
 DROP TABLE IF EXISTS `user`;
-
-
+================
 CREATE TABLE IF NOT EXISTS `warehouse` (
 
   `warehouse_id` int NOT NULL AUTO_INCREMENT,
